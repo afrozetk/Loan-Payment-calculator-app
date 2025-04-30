@@ -7,13 +7,9 @@ This Android app calculates the monthly payment for a loan based on user inputs:
 ## ✅ Features
 
 - Inputs for principal and interest rate (numbers only)
-- Loan term selection using a Spinner or RadioButtons (10, 15, 30 years)
+- Loan term selection using a RadioButtons (10, 15, 30 years)
 - Monthly payment calculated using a formula
-- Button click handled with a **lambda function** (not using `onClick`)
-- Image included using ImageView
 - UI built with LinearLayout inside a ScrollView
-- App title, colors, and text set using resource files
-
 ---
 
 ## 🧮 Formula
