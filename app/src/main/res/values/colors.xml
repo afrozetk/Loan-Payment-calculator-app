@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Afroze Kassam
+Proj2_kassam
+April 26th 2025-->
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name= "navyblue">#0824C7</color>
+    <color name= "soft_purple">#C7C1DE</color>
+    <color name= "dark_purple">#702FE9</color>
+    <color name= "pink">#ED105C</color>
+
+
+</resources>
+

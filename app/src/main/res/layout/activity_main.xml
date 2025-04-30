@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Afroze Kassam
+Proj2_kassam
+April 26th 2025-->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/soft_purple"
+        android:padding="24dp"
+        android:layout_margin="18dp">
+
+        <!-- App title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="24dp"
+            android:text="@string/app_title"
+            android:textColor="@color/navyblue"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- Logo image -->
+        <ImageView
+            android:layout_width="86dp"
+            android:layout_height="89dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo2" />
+
+        <!-- Principal amount label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/principal_amount"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/dark_purple"/>
+
+        <!-- Principal amount input field -->
+        <EditText
+            android:id="@+id/principal_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="16dp"
+            android:textSize="18sp"/>
+
+        <!-- Interest rate label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/interest_rate"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/dark_purple"/>
+
+        <!-- Interest rate input field -->
+        <EditText
+            android:id="@+id/interest_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="16dp"
+            android:textSize="18sp"/>
+
+        <!-- Loan term label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loan_term"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/dark_purple"/>
+
+        <!-- Loan term options radio group -->
+        <RadioGroup
+            android:id="@+id/termGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
+
+            <!-- 10-year option -->
+            <RadioButton
+                android:id="@+id/tenYears"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ten"
+                android:textSize="18sp"/>
+
+            <!-- 15-year option -->
+            <RadioButton
+                android:id="@+id/fifteenYears"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fifteen"
+                android:textSize="18sp"/>
+
+            <!-- 30-year option -->
+            <RadioButton
+                android:id="@+id/thirtyYears"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/thirty"
+                android:textSize="18sp"/>
+        </RadioGroup>
+
+        <!-- Calculate button -->
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:text="@string/calc" />
+
+        <!-- Result display area -->
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp"
+            android:layout_marginTop="24dp"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textColor="@color/pink"/>
+
+        <!-- Decorative image at the bottom -->
+        <ImageView
+            android:layout_width="157dp"
+            android:layout_height="101dp"
+            android:layout_gravity="center"
+            android:src="@drawable/image" />
+
+    </LinearLayout>
+</ScrollView>
